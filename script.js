@@ -3,26 +3,26 @@ let currentSlide = 0
 let submitButton = document.querySelector('.submit')
 
 
-let myQuestions = [
-	{
-		question: "",
-		answers: {
-			a: '',
-			b: '',
-			c: ''
-		},
-		correctAnswer: 'b'
-	},
-	{
-		question: '',
-		answers: {
-			a: '',
-			b: '',
-			c: ''
-		},
-		correctAnswer: 'a'
-	}
-]
+// let myQuestions = [
+// 	{
+// 		question: "",
+// 		answers: {
+// 			a: '',
+// 			b: '',
+// 			c: ''
+// 		},
+// 		correctAnswer: 'b'
+// 	},
+// 	{
+// 		question: '',
+// 		answers: {
+// 			a: '',
+// 			b: '',
+// 			c: ''
+// 		},
+// 		correctAnswer: 'a'
+// 	}
+// ]
 
 
 submitButton.addEventListener('click', function(evt) {
