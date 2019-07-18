@@ -381,29 +381,33 @@
 .body-main {
 	grid-row: 2 / span 1;
 	grid-column: 2 / span 1;
-	background-color: white;
+	background-color: black;
 }
 .chester {
-	background-image: url('https://i.imgur.com/1zRehhz.jpg');
+/*	background-image: url();*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-color: black;
 }
 .kroeger {
-	background-image: url('https://i.imgur.com/2RXMVVw.jpg');
+	/*background-image: url('https://i.imgur.com/2RXMVVw.jpg');*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-color: black;
 }
 .kiedis {
-	background-image: url('https://i.imgur.com/J2JbGWd.jpg');
+	/*background-image: url('https://i.imgur.com/J2JbGWd.jpg');*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-color: black;
 } 
 .cobain {
-	background-image: url('https://i.imgur.com/dPYALES.jpg');
+	/*background-image: url('https://i.imgur.com/dPYALES.jpg');*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-color: black;
 }
