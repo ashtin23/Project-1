@@ -330,7 +330,7 @@
 .allFirst {
 	grid-row: 2 / span 1;
 	grid-column: 1 / span 1;
-	/*background-color: blue;*/
+	background-color: white;
 }
 .allSecond {
 	grid-row: 2 / span 1;
@@ -388,26 +388,26 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-color: black;
+	background-color: darkgrey;
 }
 .kroeger {
 	/*background-image: url('https://i.imgur.com/2RXMVVw.jpg');*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-color: black;
+	background-color: darkgrey;
 }
 .kiedis {
 	/*background-image: url('https://i.imgur.com/J2JbGWd.jpg');*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-color: black;
+	background-color: darkgrey;
 } 
 .cobain {
 	/*background-image: url('https://i.imgur.com/dPYALES.jpg');*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-color: black;
+	background-color: darkgrey;
 }

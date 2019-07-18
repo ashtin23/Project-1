@@ -1,7 +1,7 @@
 let slides = document.querySelectorAll('#slides .slide')
 let currentSlide = 0
 let submitButton = document.querySelector('.submit')
-// var wrongAnswers = document.querySelectorAll('.wrong')
+var wrongAnswers = document.querySelectorAll('.wrong')
 // let correctAnswers = document.querySelectorAll('.correct')
 let allHeader = document.querySelectorAll('allHeader')
 let slideHeader = document.querySelector('.slide-1-header')
@@ -10,6 +10,10 @@ let slideSecondBody = document.querySelector('.body-main-2')
 let slideThirdBody = document.querySelector('.body-main-3')
 let slideFourthBody = document.querySelector('.body-main-4')
 let slideAllBodies = document.querySelectorAll('.body-main')
+// let button = document.createElement('button')
+// button.className = 'button'
+
+
 
 //all q/a will be stored in an array of arrays
 //will need a for loop to cycle through them all, setting all of the questions to the applicable header
@@ -30,7 +34,7 @@ let myQuestions = [
 
 let myAnswers = [
 	{
-		wrongOne: "Chester Bennington",
+		wrongOne: "Chester Bennington", 
 		wrongTwo: "Anthony Kiedis",
 		correct: "Kurt Cobain",
 		wrongThree: "Chad Kroeger"
@@ -105,12 +109,31 @@ submitButton.addEventListener('click', function(evt) {
 	currentSlide = (currentSlide+1)%slides.length
 	slides[currentSlide].className = 'slide showing'
 
+
+	// slideAllBodies.appendChild(button)
+
 	slideHeader.innerHTML = myQuestions[0]
 	slideFirstBody.innerHTML = myAnswers[0].wrongOne
 	slideSecondBody.innerHTML = myAnswers[0].wrongTwo
 	slideThirdBody.innerHTML = myAnswers[0].correct
 	slideFourthBody.innerHTML = myAnswers[0].wrongThree
+
 })
+
+for(let i = 0; i < slideAllBodies.length; i++) {
+	let value = slideAllBodies[i].value
+slideAllBodies[i].addEventListener('click', function(evt) {
+	console.log('test')
+	if (evt.target.innerText === myAnswers[0].correct) {
+		console.log('good job')
+	}else {
+		console.log('keep trying')
+	}
+	})
+}
+// button.addEventListener('click', function(evt) {
+// 	console.log('test')
+// })
 
 
 // let wrongAnswer = document.querySelector('.wrong')
