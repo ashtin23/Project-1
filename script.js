@@ -15,94 +15,40 @@ let slideAllBodies = document.querySelectorAll('.body-main')
 
 
 
-//all q/a will be stored in an array of arrays
-//will need a for loop to cycle through them all, setting all of the questions to the applicable header
-//and one anser to each body element
+// all q/a will be stored in an array of arrays
+// will need a for loop to cycle through them all, setting all of the questions to the applicable header
+// and one anser to each body element
+let questions = [
+	{
+		question: 'Who is the lead singer of Nirvana?',
+		answers: ["Chester Bennington", "Anthony Kiedis", "Kurt Cobain", "Chad Kroeger"],
+		correctAnswer: 2
+	}, 
+	{
+		question: "What is the answer to question 2?",
+		answers: ["A", "B", "C", "D"],
+		correctAnswer:1
+	},
+	{
+		question: "What is the answer to question 3?",
+		answers: ["A", "B", "C", "D"],
+		correctAnswer:3
+	},
+	{
+		question: "What is the answer to question 4?",
+		answers: ["A", "B", "C", "D"],
+		correctAnswer:1
+	},
+	{
+		question: "What is the answer to question 5?",
+		answers: ["A", "B", "C", "D"],
+		correctAnswer:0
+	},
 
-let myQuestions = [
-	'Who is the lead singer of Nirvana?',
-	'What is the answer to question 2?',
-	'What is the answer to question 3?',
-	'What is the answer to question 4?',
-	'What is the answer to question 5?',
-	'What is the answer to question 6?',
-	'What is the answer to question 7?',
-	'What is the answer to question 8?',
-	'What is the answer to question 9?',
-	'What is the answer to question 10?'
-]
-
-let myAnswers = [
-	{
-		wrongOne: "Chester Bennington", 
-		wrongTwo: "Anthony Kiedis",
-		correct: "Kurt Cobain",
-		wrongThree: "Chad Kroeger"
-	},
-	{
-		wrong: "Answer a",
-		correct: "Answer b",
-		wrong: "Answer c",
-		wrong: "Answer d"
-	},
-	{
-		wrong: "A",
-		wrong: "B",
-		correct: "C",
-		wrong: "D"
-	},
-	{
-		wrong: " A",
-		wrong: " B",
-		wrong: " C",
-		correct: " D"
-	},
-	{
-		correct: "A",
-		wrong: "B",
-		wrong: "C",
-		wrong: "D"
-	},
-	{
-		wrong: "A",
-		wrong: "B",
-		correct: "C",
-		wrong: "D"
-	},
-	{
-		wrong: "A",
-		correct: "B",
-		wrong: "C",
-		wrong: "D"
-	},
-	{
-		wrong: "A",
-		wrong: "B",
-		wrong: "C",
-		correct: "D"
-	},
-	{
-		wrong: "A",
-		wrong: "B",
-		correct: "C",
-		wrong: "D"
-	},
-	{
-		correct: "A",
-		wrong: "B",
-		wrong: "C",
-		wrong: "D"
-	},
 
 ]
 
-let correctAnswers = [
-			"Kurt Cobain", "Answer b", "C", "D", "A", "C", "B", "D", "C", "A"
-	]
-
-
-
-
+console.log(questions[0].answers.indexOf('Kurt Cobain'))
 submitButton.addEventListener('click', function(evt) {
 	// for (let i = 0; i < slides.length; i++) {
 	slides[currentSlide].className = 'slide'
@@ -112,63 +58,31 @@ submitButton.addEventListener('click', function(evt) {
 
 	// slideAllBodies.appendChild(button)
 
-	slideHeader.innerHTML = myQuestions[0]
-	slideFirstBody.innerHTML = myAnswers[0].wrongOne
-	slideSecondBody.innerHTML = myAnswers[0].wrongTwo
-	slideThirdBody.innerHTML = myAnswers[0].correct
-	slideFourthBody.innerHTML = myAnswers[0].wrongThree
+	slideHeader.innerHTML = questions[0].question
+	slideFirstBody.innerHTML = questions[0].answers[0]
+	slideSecondBody.innerHTML = questions[0].answers[1]
+	slideThirdBody.innerHTML = questions[0].answers[2]
+	slideFourthBody.innerHTML = questions[0].answers[3]
 
 })
 
 for(let i = 0; i < slideAllBodies.length; i++) {
-	let value = slideAllBodies[i].value
+	// let value = slideAllBodies[i].value
+	var theIndex = questions[i].answers.indexOf(i)
 slideAllBodies[i].addEventListener('click', function(evt) {
-	console.log('test')
-	if (evt.target.innerText === myAnswers[0].correct) {
+	// console.log('test')
+	if (questions[i].correctAnswer === questions[i].answers.indexOf(evt.target.value)) {
 		console.log('good job')
 	}else {
 		console.log('keep trying')
-	}
+		}
+
+	slideHeader.innerHTML = questions[currentSlide].question
+	slideFirstBody.innerHTML = questions[currentSlide].answers[0]
+	slideSecondBody.innerHTML = questions[currentSlide].answers[1]
+	slideThirdBody.innerHTML = questions[currentSlide].answers[2]
+	slideFourthBody.innerHTML = questions[currentSlide].answers[3]
+	currentSlide+=1
+	// return (currentSlide < 5)
 	})
 }
-// button.addEventListener('click', function(evt) {
-// 	console.log('test')
-// })
-
-
-// let wrongAnswer = document.querySelector('.wrong')
-// wrongAnswer.addEventListener('click', function(evt) {
-// 	evt.preventDefault()
-// 	if (evt.target.className === 'wrong') {
-// 		console.log('wrong!')
-// 	}
-// })
-
-
-
-
-
-// 	for (let i=0; i < wrongAnswers.length; i++) {
-// 		// console.log('test1')
-// 		wrongAnswers[i].addEventListener('click', function(evt) {
-// 			evt.preventDefault()
-// 			// console.log('test')
-// 			if (evt.target.className === "wrong") {
-// 			console.log('wrong!')
-	
-// 			}
-// 		})
-
-// }
-
-// for (let i=0; i < correctAnswers.length; i++) {
-// 	correctAnswers[i].addEventListener('click', function(evt) {
-// 		evt.preventDefault()
-// 		if (evt.target.className === "correct") {
-// 		console.log('correct!')
-// 			allHeader.innerHTML = myQuestions[0][0]
-// 		}
-// 	})
-
-// }
-
