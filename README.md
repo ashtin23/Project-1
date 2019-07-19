@@ -5,6 +5,11 @@ A multiple choice trivia game based on music! Click the Start button to begin. C
 1) Fork and clone this repository.
 2) Change into the new directory.
 3) Fulfill the listed requirements.
+## User Stories
+When approaching this project, I organized desired features into three levels, which are as follows:
+1) Bronze Level: This is essentially the bare-bones functionality I was hoping to desire. This means that when prompted, the user is able to navigate through the quiz by quicking
+
+
 ## Developing/Contributing
 Feel free to modify my code to create your own version of the game! If you would like to contribute, please fork the repository and use a feature branch. Pull requests are welcomed!
 ## Programming Languages
