@@ -1,5 +1,6 @@
 let slides = document.querySelectorAll('#slides .slide')
 let currentSlide = 0
+let score = 0
 let submitButton = document.querySelector('.submit')
 var wrongAnswers = document.querySelectorAll('.wrong')
 // let correctAnswers = document.querySelectorAll('.correct')
@@ -22,28 +23,28 @@ let questions = [
 	{
 		question: 'Who is the lead singer of Nirvana?',
 		answers: ["Chester Bennington", "Anthony Kiedis", "Kurt Cobain", "Chad Kroeger"],
-		correctAnswer: 2
+		correctAnswer: "Kurt Cobain"
 	}, 
 	{
-		question: "What is the answer to question 2?",
-		answers: ["A", "B", "C", "D"],
-		correctAnswer:1
+		question: "What is the stage name of the American rapper with the birth name Marshall Bruce Mathers III?",
+		answers: ["T.I.", "Eminem", "Dr. Dre", "Big Boi"],
+		correctAnswer:"Eminem"
 	},
 	{
-		question: "What is the answer to question 3?",
-		answers: ["A", "B", "C", "D"],
-		correctAnswer:3
+		question: "What was the name of Jay-Z's first album?",
+		answers: ["The Blueprint", "The Black Album", "In My Lifetime, Vol. 1", "Reasonable Doubt"],
+		correctAnswer:"Reasonable Doubt"
 	},
 	{
-		question: "What is the answer to question 4?",
-		answers: ["A", "B", "C", "D"],
-		correctAnswer:1
+		question: "Which hip-hop artist played a role in the film 'Four Brothers'?",
+		answers: ["Drake", "Andre 3000", "Kanye West", "Ludacris"],
+		correctAnswer:"Andre 3000"
 	},
 	{
-		question: "What is the answer to question 5?",
-		answers: ["A", "B", "C", "D"],
-		correctAnswer:0
-	},
+		question: "Which artist holds the record for most Grammy nominations?",
+		answers: ["Quincy Jones", "Jay-Z", "Bruce Springsteen", "Michael Jackson"],
+		correctAnswer:"Quincy Jones"
+	}
 
 
 ]
@@ -71,7 +72,9 @@ for(let i = 0; i < slideAllBodies.length; i++) {
 	var theIndex = questions[i].answers.indexOf(i)
 slideAllBodies[i].addEventListener('click', function(evt) {
 	// console.log('test')
-	if (questions[i].correctAnswer === questions[i].answers.indexOf(evt.target.value)) {
+	evt.preventDefault()
+	let chosenAnswer = evt.target.innerText
+	if (chosenAnswer === questions[i].correctAnswer) {
 		console.log('good job')
 	}else {
 		console.log('keep trying')
@@ -86,3 +89,4 @@ slideAllBodies[i].addEventListener('click', function(evt) {
 	// return (currentSlide < 5)
 	})
 }
+
