@@ -1,6 +1,7 @@
 let slides = document.querySelectorAll('#slides .slide')
 let currentSlide = 0
 let score = 0
+let slideCount = 5
 let submitButton = document.querySelector('.submit')
 var wrongAnswers = document.querySelectorAll('.wrong')
 // let correctAnswers = document.querySelectorAll('.correct')
@@ -48,8 +49,11 @@ let questions = [
 
 
 ]
+// questions[0].answers[0].style.backgroundImage = "url('https://i.imgur.com/1zRehhz.jpg')"
 
-console.log(questions[0].answers.indexOf('Kurt Cobain'))
+
+
+// console.log(questions[0].answers.indexOf('Kurt Cobain'))
 submitButton.addEventListener('click', function(evt) {
 	// for (let i = 0; i < slides.length; i++) {
 	slides[currentSlide].className = 'slide'
@@ -74,19 +78,34 @@ slideAllBodies[i].addEventListener('click', function(evt) {
 	// console.log('test')
 	evt.preventDefault()
 	let chosenAnswer = evt.target.innerText
-	if (chosenAnswer === questions[i].correctAnswer) {
+	for (j=0; j < questions.length; j++) {
+	if (chosenAnswer ===  questions[j].correctAnswer) {
 		console.log('good job')
-	}else {
+		score +=1
+	}else if (chosenAnswer !== questions[j].correctAnswer){
 		console.log('keep trying')
 		}
+	
 
+
+	// else if (evt.slideAllBodies[i] === 5) {
+	// 	evt.stopPropagation()
+	// }
+}
+	if (currentSlide < slideCount) {
 	slideHeader.innerHTML = questions[currentSlide].question
 	slideFirstBody.innerHTML = questions[currentSlide].answers[0]
 	slideSecondBody.innerHTML = questions[currentSlide].answers[1]
 	slideThirdBody.innerHTML = questions[currentSlide].answers[2]
 	slideFourthBody.innerHTML = questions[currentSlide].answers[3]
 	currentSlide+=1
+	}
+	else if(currentSlide = slideCount) {
+		alert("Your answered " + score + "/5 correctly!")
+	}
+
 	// return (currentSlide < 5)
-	})
+	
+})
 }
 
