@@ -8,12 +8,17 @@ A multiple choice trivia game based on music! Click the Start button to begin. C
 ## User Stories
 When approaching this project, I organized desired features into three levels, which are as follows:
 1) Bronze Level: This is essentially the bare-bones functionality I was hoping to desire. This means that when prompted, the user is able to navigate through the quiz by clicking on provided buttons.
-2) Silver Level: This plan includes adding more styling to the page, as well as improving functionality. Though I have yet to complete it, I am hoping to add images to applicable buttons. 
-3) Gold Level: 
+2) Silver Level: This plan includes adding more styling to the page, as well as improving functionality. Though I have yet to complete it, I am hoping to add images to applicable buttons. I am also going to have a title page, rather than just having a button on the first page. I am also going to incorporate the score counter onto each slide, to let the user know how many questions they have gotten correct as they make their way through the quiz. I am also going to add many more questions to the quiz.
+3) Gold Level: My gold level is going to incorporate elaborate design on the title page and more elegant transitions between the slides. It is also going to introduce elements in-between each slide that informs them whether or not they answered the previous question correctly. It will also include quizzes with varying degrees of difficulty.
 
 
 ## Developing/Contributing
 Feel free to modify my code to create your own version of the game! If you would like to contribute, please fork the repository and use a feature branch. Pull requests are welcomed!
-## Programming Languages
-HTML, CSS, and JavaScript
+Main Repository: https://github.com/ashtin23/ashtin23.github.io
+## Technology Used
+-HTML 
+-CSS 
+-JavaScript
+-Sublime
+-OS: macOS Mojave version 10.14.4
 

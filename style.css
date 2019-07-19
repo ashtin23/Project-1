@@ -97,14 +97,7 @@
 	background-position: center;
 	background-size: cover;
 }
-/*.right-side-bar {
-	grid-row: 2 / span 4;
-	grid-column: 10 / span 1;
-	background: yellow;
-	display: grid;
-	grid-template-rows:;
-	grid-template-columns:;
-}*/
+
 .album-11 {
 	grid-row: 2 / span 1;
 	grid-column: 10 / span 1;	
@@ -141,14 +134,7 @@
 	background-position: center;
 	background-size: cover;
 }
-/*.footer {
-	grid-row: 6 / span 1;
-	grid-column: 1 / span 10;
-	background: blue;
-	display: grid;
-	grid-template-rows:;
-	grid-template-columns:;
-}*/
+
 .album-15{
 	grid-row: 6 / span 1;
 	grid-column: 10 / span 1;	
@@ -239,14 +225,7 @@
 	background-position: center;
 	background-size: cover;
 }
-/*.left-side-bar {
-	grid-row: 2 / span 4;
-	grid-column: 1 / span 1;
-	background: green;
-	display: grid;
-	grid-template-rows:;
-	grid-template-columns:;
-}*/
+
 .album-25{
 	grid-row: 5 / span 1;
 	grid-column: 1 / span 1;	
@@ -386,28 +365,24 @@
 	background-color: black;
 }
 .chester {
-/*	background-image: url();*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-color: darkgrey;
 }
 .kroeger {
-	/*background-image: url('https://i.imgur.com/2RXMVVw.jpg');*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-color: darkgrey;
 }
 .kiedis {
-	/*background-image: url('https://i.imgur.com/J2JbGWd.jpg');*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-color: darkgrey;
 } 
 .cobain {
-	/*background-image: url('https://i.imgur.com/dPYALES.jpg');*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

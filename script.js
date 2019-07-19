@@ -4,7 +4,6 @@ let score = 0
 let slideCount = 5
 let submitButton = document.querySelector('.submit')
 var wrongAnswers = document.querySelectorAll('.wrong')
-// let correctAnswers = document.querySelectorAll('.correct')
 let allHeader = document.querySelectorAll('allHeader')
 let slideHeader = document.querySelector('.slide-1-header')
 let slideFirstBody = document.querySelector('.body-main-1')
@@ -12,8 +11,7 @@ let slideSecondBody = document.querySelector('.body-main-2')
 let slideThirdBody = document.querySelector('.body-main-3')
 let slideFourthBody = document.querySelector('.body-main-4')
 let slideAllBodies = document.querySelectorAll('.body-main')
-// let button = document.createElement('button')
-// button.className = 'button'
+
 
 
 
@@ -49,19 +47,15 @@ let questions = [
 
 
 ]
-// questions[0].answers[0].style.backgroundImage = "url('https://i.imgur.com/1zRehhz.jpg')"
 
 
 
-// console.log(questions[0].answers.indexOf('Kurt Cobain'))
 submitButton.addEventListener('click', function(evt) {
-	// for (let i = 0; i < slides.length; i++) {
 	slides[currentSlide].className = 'slide'
 	currentSlide = (currentSlide+1)%slides.length
 	slides[currentSlide].className = 'slide showing'
 
 
-	// slideAllBodies.appendChild(button)
 
 	slideHeader.innerHTML = questions[0].question
 	slideFirstBody.innerHTML = questions[0].answers[0]
@@ -72,10 +66,8 @@ submitButton.addEventListener('click', function(evt) {
 })
 
 for(let i = 0; i < slideAllBodies.length; i++) {
-	// let value = slideAllBodies[i].value
 	var theIndex = questions[i].answers.indexOf(i)
 slideAllBodies[i].addEventListener('click', function(evt) {
-	// console.log('test')
 	evt.preventDefault()
 	let chosenAnswer = evt.target.innerText
 	for (j=0; j < questions.length; j++) {
@@ -88,9 +80,6 @@ slideAllBodies[i].addEventListener('click', function(evt) {
 	
 
 
-	// else if (evt.slideAllBodies[i] === 5) {
-	// 	evt.stopPropagation()
-	// }
 }
 	if (currentSlide < slideCount) {
 	slideHeader.innerHTML = questions[currentSlide].question
@@ -104,7 +93,6 @@ slideAllBodies[i].addEventListener('click', function(evt) {
 		alert("Your answered " + score + "/5 correctly!")
 	}
 
-	// return (currentSlide < 5)
 	
 })
 }
