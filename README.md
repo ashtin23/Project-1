@@ -7,7 +7,9 @@ A multiple choice trivia game based on music! Click the Start button to begin. C
 3) Fulfill the listed requirements.
 ## User Stories
 When approaching this project, I organized desired features into three levels, which are as follows:
-1) Bronze Level: This is essentially the bare-bones functionality I was hoping to desire. This means that when prompted, the user is able to navigate through the quiz by quicking
+1) Bronze Level: This is essentially the bare-bones functionality I was hoping to desire. This means that when prompted, the user is able to navigate through the quiz by clicking on provided buttons.
+2) Silver Level: This plan includes adding more styling to the page, as well as improving functionality. Though I have yet to complete it, I am hoping to add images to applicable buttons. 
+3) Gold Level: 
 
 
 ## Developing/Contributing
