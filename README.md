@@ -11,7 +11,10 @@ When approaching this project, I organized desired features into three levels, w
 2) Silver Level: This plan includes adding more styling to the page, as well as improving functionality. Though I have yet to complete it, I am hoping to add images to applicable buttons. I am also going to have a title page, rather than just having a button on the first page. I am also going to incorporate the score counter onto each slide, to let the user know how many questions they have gotten correct as they make their way through the quiz. I am also going to add many more questions to the quiz.
 3) Gold Level: My gold level is going to incorporate elaborate design on the title page and more elegant transitions between the slides. It is also going to introduce elements in-between each slide that informs them whether or not they answered the previous question correctly. It will also include quizzes with varying degrees of difficulty.
 ## Example
+### Upon opening the application, you will see the title page, as follows:
 ![Image of the title page](https://i.imgur.com/gKAp98L.png)
+### To begin the quiz, click on the start button! You should see a page like this:
+![Image of the first slide](https://i.imgur.com/YRLtLdZ.png)
 
 
 ## Developing/Contributing
