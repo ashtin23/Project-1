@@ -15,15 +15,17 @@ When approaching this project, I organized desired features into three levels, w
 ![Image of the title page](https://i.imgur.com/gKAp98L.png)
 ### To begin the quiz, click on the start button! You should see a page like this:
 ![Image of the first slide](https://i.imgur.com/YRLtLdZ.png)
+### Choose the best answer and click on the corresponding button to navigate through the quiz and test your music knowledge!
+
 
 
 ## Developing/Contributing
 Feel free to modify my code to create your own version of the game! If you would like to contribute, please fork the repository and use a feature branch. Pull requests are welcomed!
 Main Repository: https://github.com/ashtin23/ashtin23.github.io
 ## Technology Used
--HTML 
--CSS 
--JavaScript
--Sublime
--OS: macOS Mojave version 10.14.4
+1)HTML 
+2)CSS 
+3)JavaScript
+4)Sublime
+5)OS: macOS Mojave version 10.14.4
 
