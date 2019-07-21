@@ -22,7 +22,8 @@ let questions = [
 	{
 		question: 'Who is the lead singer of Nirvana?',
 		answers: ["Chester Bennington", "Anthony Kiedis", "Kurt Cobain", "Chad Kroeger"],
-		correctAnswer: "Kurt Cobain"
+		correctAnswer: "Kurt Cobain",
+		answerImage: ["url('https://i.imgur.com/1zRehhz.jpg')", 'https://i.imgur.com/J2JbGWd.jpg', 'https://i.imgur.com/dPYALES.jpg', 'https://i.imgur.com/2RXMVVw.jpg']
 	}, 
 	{
 		question: "What is the stage name of the American rapper with the birth name Marshall Bruce Mathers III?",
@@ -51,6 +52,7 @@ let questions = [
 
 
 submitButton.addEventListener('click', function(evt) {
+	evt.preventDefault()
 	slides[currentSlide].className = 'slide'
 	currentSlide = (currentSlide+1)%slides.length
 	slides[currentSlide].className = 'slide showing'
@@ -58,7 +60,7 @@ submitButton.addEventListener('click', function(evt) {
 
 
 	slideHeader.innerHTML = questions[0].question
-	slideFirstBody.innerHTML = questions[0].answers[0]
+	slideFirstBody.backgroundImage = questions[0].answerImage[0].innerText
 	slideSecondBody.innerHTML = questions[0].answers[1]
 	slideThirdBody.innerHTML = questions[0].answers[2]
 	slideFourthBody.innerHTML = questions[0].answers[3]
@@ -77,7 +79,12 @@ slideAllBodies[i].addEventListener('click', function(evt) {
 	}else if (chosenAnswer !== questions[j].correctAnswer){
 		console.log('keep trying')
 		}
-	
+
+// 		for (let x=0; x < slideAllBodies.length; x++) {
+// 		for (let j = 0; j<answerImage.length; j++) {
+// 		slideAllBodies[x].style.backgroundImage === quesions[i].answerImage[j].innerHTML
+// 	}
+// }
 
 
 }
@@ -92,6 +99,11 @@ slideAllBodies[i].addEventListener('click', function(evt) {
 	else if(currentSlide = slideCount) {
 		alert("Your answered " + score + "/5 correctly!")
 	}
+
+
+
+
+
 
 	
 })
