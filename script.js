@@ -23,7 +23,8 @@ let questions = [
 		question: 'Who is the lead singer of Nirvana?',
 		answers: ["Chester Bennington", "Anthony Kiedis", "Kurt Cobain", "Chad Kroeger"],
 		correctAnswer: "Kurt Cobain",
-		answerImage: ["url('https://i.imgur.com/1zRehhz.jpg')", 'https://i.imgur.com/J2JbGWd.jpg', 'https://i.imgur.com/dPYALES.jpg', 'https://i.imgur.com/2RXMVVw.jpg']
+		//working on adding images to buttons
+		// answerImage: ["url('https://i.imgur.com/1zRehhz.jpg')", 'https://i.imgur.com/J2JbGWd.jpg', 'https://i.imgur.com/dPYALES.jpg', 'https://i.imgur.com/2RXMVVw.jpg']
 	}, 
 	{
 		question: "What is the stage name of the American rapper with the birth name Marshall Bruce Mathers III?",
@@ -60,7 +61,7 @@ submitButton.addEventListener('click', function(evt) {
 
 
 	slideHeader.innerHTML = questions[0].question
-	slideFirstBody.backgroundImage = questions[0].answerImage[0].innerText
+	slideFirstBody.backgroundImage = questions[0].answers[0]
 	slideSecondBody.innerHTML = questions[0].answers[1]
 	slideThirdBody.innerHTML = questions[0].answers[2]
 	slideFourthBody.innerHTML = questions[0].answers[3]
