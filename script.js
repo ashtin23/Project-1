@@ -81,6 +81,7 @@ slideAllBodies[i].addEventListener('click', function(evt) {
 		console.log('keep trying')
 		}
 
+		//working on adding images to buttons
 // 		for (let x=0; x < slideAllBodies.length; x++) {
 // 		for (let j = 0; j<answerImage.length; j++) {
 // 		slideAllBodies[x].style.backgroundImage === quesions[i].answerImage[j].innerHTML
